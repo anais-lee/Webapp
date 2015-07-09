@@ -1,0 +1,76 @@
+  BaseControls.PictureButton.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly BaseControls, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualC, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class BaseControls.DrawingSurface: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Threading.Mutex drawMutex : Public, Static
+  Properties:
+    Boolean RedrawsEnabled 'get set' : 
+    Boolean OverlayEnabled 'get set' : 
+    System.Drawing.Bitmap SrcBitmap 'get set' : 
+  Methods:
+    get_SrcBitmap(): PrivateScope, Public, HideBySig, SpecialName
+    set_SrcBitmap(Bitmap): PrivateScope, Public, HideBySig, SpecialName
+    get_OverlayEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_OverlayEnabled(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_RedrawsEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_RedrawsEnabled(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    Start(): PrivateScope, Public, HideBySig
+    Stop(): PrivateScope, Public, HideBySig
+    Animate(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    Redraw(Rectangle): PrivateScope, Public, HideBySig
+    ClearRedraws(): PrivateScope, Public, HideBySig
+Class BaseControls.PictureButton: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Image ClickImage 'get set' : 
+    System.Drawing.Image FocusImage 'get set' : 
+    System.Drawing.Image BlurImage 'get set' : 
+    System.Windows.Forms.Keys Key 'get set' : 
+  Events:
+    System.Windows.Forms.KeyEventHandler SendKeyUp: SpecialName
+    System.Windows.Forms.KeyEventHandler SendKeyDown: SpecialName
+  Methods:
+    get_Key(): PrivateScope, Public, HideBySig, SpecialName
+    set_Key(Keys): PrivateScope, Public, HideBySig, SpecialName
+    get_BlurImage(): PrivateScope, Public, HideBySig, SpecialName
+    set_BlurImage(Image): PrivateScope, Public, HideBySig, SpecialName
+    get_FocusImage(): PrivateScope, Public, HideBySig, SpecialName
+    set_FocusImage(Image): PrivateScope, Public, HideBySig, SpecialName
+    get_ClickImage(): PrivateScope, Public, HideBySig, SpecialName
+    set_ClickImage(Image): PrivateScope, Public, HideBySig, SpecialName
+    add_SendKeyDown(KeyEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SendKeyDown(KeyEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_SendKeyUp(KeyEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SendKeyUp(KeyEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    ShowKeyDown(KeyEventArgs): PrivateScope, Public, HideBySig
+    ShowKeyUp(KeyEventArgs): PrivateScope, Public, HideBySig
+Class BaseControls.TransparentPictureBox: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.PictureBox
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Windows.Forms.CreateParams CreateParams 'get ' : 
+  Methods:
+    get_CreateParams(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    InvalidateEx(): PrivateScope, Public, HideBySig
+    OnPaintBackground(PaintEventArgs): PrivateScope, Public, Virtual, HideBySig

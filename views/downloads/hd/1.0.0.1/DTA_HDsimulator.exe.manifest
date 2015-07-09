@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DTA_HDsimulator.exe" version="1.0.0.1" publicKeyToken="e9f18f8734d1efe6" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DTA_HDsimulator" version="1.0.5665.20126" language="neutral" processorArchitecture="x86" />
+    <commandLine file="DTA_HDsimulator.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BaseControls.dll" size="58368">
+      <assemblyIdentity name="BaseControls" version="1.0.5665.20117" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>7qcA5klSLCcGlruzHFQJhCI6ZLY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency xmlns="urn:schemas-microsoft-com:asm.v1">
+    <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="DTA_HDsimulator.dll" asmv2:size="1867264">
+      <assemblyIdentity name="DTA_HDsimulator" version="1.0.5632.16868" language="neutral" processorArchitecture="x86" />
+      <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Wdu69Y2lAO2WLNoU05/ZWJUzIps=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DTA_HDsimulator.exe" size="1870848">
+      <assemblyIdentity name="DTA_HDsimulator" version="1.0.5665.20126" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Dc4wBEoQ/KPDl5DhwP1Ng0axSQQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RemoteControl.dll" size="861696">
+      <assemblyIdentity name="RemoteControl" version="1.0.5659.25410" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>a3Ox7GBVzL9QNS3G3MMdpoO1zSw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CARoot.cer" size="506">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bU2MN7tMDudJj4bP2tgsnrq8VGk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="CARoot.pfx" size="1710">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GuYzXRNKc3slpDuqkcGKuNeQ9TE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="CARoot.pvk" size="636">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>O2IzrGbHtZBT3qy21dGUX5nbT/A=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=CARoot" issuerKeyHash="be218c28357127f09a7e7a28b54cc99c9c572460" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>QDUJkoFghfTGxezlVRZmvgXvLxk=</DigestValue></Reference></SignedInfo><SignatureValue>Ug+HbMYJZgPTJR5d5HgaLB+GVN8MBe3ESx7LIRav1PjO0xdvfLfuEkTD5cM3q/P5rlBn9HZYAkdxolqyg/uZfwFQSn7r1nqL7bS422cECuCAOHZ/0JkFf92JHri+4Pmr7sqp6/VDx4EDmxTvG5mywmQVud8kTp+KH3wLP+wzgBY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>nASoohIJricDGQfdV0YI668bp1U2fKxfzvax+b0JtUfUCQZio6bbNiU+0ITU0h/oLoVrOlhD5yo83Karci691ZOdYplUuPXp5X4kXNty1VCZXK9K33oo7/R5Gsp0w5PKXBD0O/DMK5xJHO8bqMLzUdymSL6oBdP5qF4YCETQwOE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="192fef05be661655e5ecc5c6f485608192093540" Description="" Url=""><as:assemblyIdentity name="DTA_HDsimulator.exe" version="1.0.0.1" publicKeyToken="e9f18f8734d1efe6" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CARoot</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>uWKtHRD3kjjEVZA2uoMf7UElPmU=</DigestValue></Reference></SignedInfo><SignatureValue>CZQgzp0H2WJ2VoiNyn+nDtE4dbpK+46J14RtX9Tel/TYCbquqyo/UGYAFswHUxgaHQJvVG87eK6GfB+7w6+hEbr+ETPIOf9PyTVWb28RXwIUUry7hhNzZqdjJx/X2Rry537ftxBW3X6RPfk25OcWkEtfuuyj3aOrlAF+xARWc7k=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>nASoohIJricDGQfdV0YI668bp1U2fKxfzvax+b0JtUfUCQZio6bbNiU+0ITU0h/oLoVrOlhD5yo83Karci691ZOdYplUuPXp5X4kXNty1VCZXK9K33oo7/R5Gsp0w5PKXBD0O/DMK5xJHO8bqMLzUdymSL6oBdP5qF4YCETQwOE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9jCCAWOgAwIBAgIQbi7vkhbmHblCm3aiw0qVtDAJBgUrDgMCHQUAMBExDzANBgNVBAMTBkNBUm9vdDAeFw0xNTA3MDcyMTA2MzdaFw0zOTEyMzEyMzU5NTlaMBExDzANBgNVBAMTBkNBUm9vdDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAnASoohIJricDGQfdV0YI668bp1U2fKxfzvax+b0JtUfUCQZio6bbNiU+0ITU0h/oLoVrOlhD5yo83Karci691ZOdYplUuPXp5X4kXNty1VCZXK9K33oo7/R5Gsp0w5PKXBD0O/DMK5xJHO8bqMLzUdymSL6oBdP5qF4YCETQwOECAwEAAaNXMFUwDwYDVR0TAQH/BAUwAwEB/zBCBgNVHQEEOzA5gBAvoI4XsypRThu4YZzJXM81oRMwETEPMA0GA1UEAxMGQ0FSb290ghBuLu+SFuYduUKbdqLDSpW0MAkGBSsOAwIdBQADgYEAdlNTmpOHdYnQ32am7+6p2pQbDh4DomhyjS+8kqroQ7MZzWJ2Mu907pijuZreL4lxC8Ga88WoOqypXmNuRNpy+xKvDDWBDOKiN1/sIeSYaIcC+1ckdI0w2AkdTjnXxhP5i4o1ob/Bumzqq5rl4LMOC85QVV62teCx/IHmpEONw2U=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
